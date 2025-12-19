@@ -121,16 +121,16 @@ const HowItWorks: React.FC = () => {
   }, []);
 
   return (
-    <section id="process" className="relative py-32 px-6 md:px-12 bg-[#050505] overflow-hidden">
+    <section id="process" className="relative py-20 sm:py-24 md:py-32 px-5 sm:px-6 md:px-12 bg-[#050505] overflow-hidden">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
       
       <div className="max-w-5xl mx-auto relative z-10">
         
         {/* Header */}
-        <div className="mb-24 md:pl-28">
+        <div className="mb-16 sm:mb-20 md:mb-24 md:pl-28">
           <span className="text-zinc-500 text-xs font-bold tracking-[0.2em] uppercase pl-1 block mb-6">The Process</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter max-w-xl leading-[1.1]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tighter max-w-xl leading-[1.2]">
             From manual chaos to <span className="text-zinc-500">autonomous order.</span>
           </h2>
         </div>
@@ -157,10 +157,10 @@ const HowItWorks: React.FC = () => {
              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[2px] h-12 bg-white blur-[2px]" />
           </div>
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-12 sm:space-y-16 md:space-y-24">
             {STEPS.map((step, index) => {
               return (
-                <div key={index} className="relative flex flex-col md:flex-row gap-8 md:gap-20 items-start">
+                <div key={index} className="relative flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-20 items-start">
                   
                   {/* Timeline Dot */}
                   <div className="hidden md:flex flex-col items-center justify-center absolute left-4 md:left-8 -translate-x-1/2 mt-10 z-20">
@@ -178,10 +178,10 @@ const HowItWorks: React.FC = () => {
                     ref={(el) => { cardsRef.current[index] = el; }}
                     className="w-full flex-1 group opacity-0 translate-x-24 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
                   >
-                    <div className="relative p-8 md:p-10 rounded-3xl bg-zinc-900/20 backdrop-blur-md border border-white/5 hover:border-white/10 hover:bg-zinc-900/40 transition-all duration-500">
+                    <div className="relative p-6 sm:p-8 md:p-10 rounded-3xl bg-zinc-900/20 backdrop-blur-md border border-white/5 hover:border-white/10 hover:bg-zinc-900/40 transition-all duration-500">
                       
                       {/* Step Number & Icon Header */}
-                      <div className="flex justify-between items-start mb-8">
+                      <div className="flex justify-between items-start mb-6 sm:mb-8">
                         <div className="flex items-center gap-4">
                           <div className={`p-3 rounded-xl bg-zinc-900 border border-white/5 group-hover:scale-110 transition-transform duration-500 text-zinc-500 group-hover:text-white`}>
                             <step.icon size={20} strokeWidth={1.5} />
