@@ -36,33 +36,33 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <section id="services" className="relative py-32 px-6 md:px-12 bg-black overflow-hidden">
+    <section id="services" className="relative py-20 sm:py-24 md:py-32 px-5 sm:px-6 md:px-12 bg-black overflow-hidden">
        {/* Background subtle glow */}
        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] bg-white/[0.02] blur-[150px] rounded-full pointer-events-none" />
 
-       <div className="max-w-7xl mx-auto mb-24 relative z-10">
-         <div ref={headerRef} className="flex flex-col md:flex-row justify-between items-end gap-12 opacity-0 translate-y-12 transition-all duration-700">
+       <div className="max-w-7xl mx-auto mb-16 sm:mb-20 md:mb-24 relative z-10">
+         <div ref={headerRef} className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 sm:gap-10 md:gap-12 opacity-0 translate-y-12 transition-all duration-700">
            <div className="space-y-8">
              <span className="text-zinc-500 text-xs font-bold tracking-[0.2em] uppercase pl-1">Capabilities</span>
-             <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[0.9]">
+             <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[0.95]">
                Scale beyond <br/>
                <span className="text-zinc-600">human limits.</span>
              </h2>
            </div>
-           <p className="text-zinc-400 text-sm leading-relaxed max-w-sm text-left md:pb-2">
+           <p className="text-zinc-400 text-sm leading-relaxed max-w-sm text-left md:text-right md:pb-2">
              We don't just "automate". We re-engineer your business model around AI, ensuring your operations are scalable, predictable, and 100% autonomous.
            </p>
          </div>
        </div>
 
-       <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mx-auto relative z-10">
+       <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-7xl mx-auto relative z-10">
 
           {/* --- CARD 1: AI Chatbots --- */}
-          <div className="group relative h-[420px] flex flex-col justify-between p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 opacity-0 translate-y-12">
+          <div className="group relative min-h-[360px] md:h-[420px] flex flex-col justify-between p-6 sm:p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 opacity-0 translate-y-12">
              
              <div className="relative z-10 flex justify-between items-start">
                 <div className="relative">
-                    <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                         <MessageSquare className="w-6 h-6 transition-colors duration-500" strokeWidth={1.5} />
                     </div>
                      {/* Visual: Animated Wave */}
@@ -88,11 +88,11 @@ const Services: React.FC = () => {
           </div>
 
           {/* --- CARD 2: Custom Workflows --- */}
-          <div className="group relative h-[420px] flex flex-col justify-between p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 delay-100 opacity-0 translate-y-12">
+          <div className="group relative min-h-[360px] md:h-[420px] flex flex-col justify-between p-6 sm:p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 delay-100 opacity-0 translate-y-12">
              
              <div className="relative z-10 flex justify-between items-start">
                 <div className="relative">
-                    <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                         <GitMerge className="w-6 h-6 transition-colors duration-500" strokeWidth={1.5} />
                     </div>
                     {/* Visual: Circuit */}
@@ -119,11 +119,11 @@ const Services: React.FC = () => {
           </div>
 
           {/* --- CARD 3: AI Voice Agents --- */}
-          <div className="group relative h-[420px] flex flex-col justify-between p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 delay-200 opacity-0 translate-y-12">
+          <div className="group relative min-h-[360px] md:h-[420px] flex flex-col justify-between p-6 sm:p-8 md:p-10 rounded-3xl bg-zinc-900/10 backdrop-blur-md border border-white/5 overflow-hidden hover:border-white/10 hover:bg-zinc-900/30 transition-all duration-700 delay-200 opacity-0 translate-y-12">
              
              <div className="relative z-10 flex justify-between items-start">
                 <div className="relative">
-                    <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                         <Mic className="w-6 h-6 transition-colors duration-500" strokeWidth={1.5} />
                     </div>
                      {/* Visual: Audio Equalizer */}

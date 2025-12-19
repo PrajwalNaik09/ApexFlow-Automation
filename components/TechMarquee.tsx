@@ -14,13 +14,13 @@ const TechMarquee: React.FC = () => {
   ];
 
   return (
-    <section className="bg-black py-24 overflow-hidden relative border-t border-white/5">
+    <section className="bg-black py-16 sm:py-20 md:py-24 overflow-hidden relative border-t border-white/5">
       {/* Radial background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(30,30,30,0.3)_0%,transparent_70%)]" />
       </div>
 
-      <div className="max-w-7xl mx-auto mb-12 px-6 md:px-12 text-center relative z-10">
+      <div className="max-w-7xl mx-auto mb-8 sm:mb-10 md:mb-12 px-5 sm:px-6 md:px-12 text-center relative z-10">
         <p className="text-zinc-500 text-xs font-bold tracking-[0.2em] uppercase">Powered By</p>
       </div>
 
@@ -36,7 +36,7 @@ const TechMarquee: React.FC = () => {
           {[...topItems, ...topItems, ...topItems, ...topItems].map((item, idx) => (
             <div
               key={`top-${idx}`}
-              className="inline-block px-8 py-4 mx-3 bg-zinc-900/30 border border-white/5 rounded-2xl text-zinc-400 text-sm font-medium tracking-wide transition-all duration-300 backdrop-blur-sm hover:bg-zinc-800/50 hover:border-white/20 hover:text-white hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-4 mx-2 sm:mx-3 bg-zinc-900/30 border border-white/5 rounded-2xl text-zinc-400 text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 backdrop-blur-sm hover:bg-zinc-800/50 hover:border-white/20 hover:text-white hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
             >
               {item}
             </div>
@@ -55,7 +55,7 @@ const TechMarquee: React.FC = () => {
           {[...bottomItems, ...bottomItems, ...bottomItems, ...bottomItems].map((item, idx) => (
             <div
               key={`bottom-${idx}`}
-              className="inline-block px-8 py-4 mx-3 bg-zinc-900/30 border border-white/5 rounded-2xl text-zinc-400 text-sm font-medium tracking-wide transition-all duration-300 backdrop-blur-sm hover:bg-zinc-800/50 hover:border-white/20 hover:text-white hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-4 mx-2 sm:mx-3 bg-zinc-900/30 border border-white/5 rounded-2xl text-zinc-400 text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 backdrop-blur-sm hover:bg-zinc-800/50 hover:border-white/20 hover:text-white hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
             >
               {item}
             </div>
