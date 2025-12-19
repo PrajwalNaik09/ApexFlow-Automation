@@ -18,8 +18,7 @@ declare global {
     }
   }
 
-  // Fix for process.env type safety
-  // We extend the existing NodeJS.ProcessEnv instead of redeclaring the global process variable
+  // Fix for process.env type safety for NodeJS namespace usage
   namespace NodeJS {
     interface ProcessEnv {
       API_KEY: string;
