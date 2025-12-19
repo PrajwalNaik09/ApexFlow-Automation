@@ -35,24 +35,24 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative py-32 px-6 md:px-12 bg-black overflow-hidden border-t border-white/5">
+    <section className="relative py-20 sm:py-24 md:py-32 px-5 sm:px-6 md:px-12 bg-black overflow-hidden border-t border-white/5">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-24 items-center">
           
           {/* Left Column: Text Content */}
-          <div className="space-y-8 order-2 lg:order-1">
+          <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
             <h2 
               ref={headingRef}
-              className="text-6xl md:text-8xl font-bold tracking-tighter text-white opacity-0 -translate-x-12 transition-all duration-1000 ease-out"
+              className="text-4xl sm:text-5xl md:text-8xl font-bold tracking-tighter text-white opacity-0 -translate-x-12 transition-all duration-1000 ease-out"
             >
               Our DNA
             </h2>
             <p 
               ref={paragraphRef}
-              className="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-xl font-light opacity-0 -translate-x-12 transition-all duration-1000 delay-200 ease-out"
+              className="text-zinc-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl font-light opacity-0 -translate-x-12 transition-all duration-1000 delay-200 ease-out"
             >
               At ApexFlow, we don't just build systems; we engineer intelligence that amplifies human potential. 
               We bridge the critical gap between intuition and machine learning, creating adaptive solutions that 
@@ -61,18 +61,18 @@ const About: React.FC = () => {
           </div>
 
           {/* Right Column: Visual Bento Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full min-h-[500px] order-1 lg:order-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full min-h-[420px] sm:min-h-[500px] order-1 lg:order-2">
             
             {/* Tall Card: Efficiency Metric (Animates Bottom to Up) */}
             <div 
               ref={largeCardRef}
-              className="relative bg-zinc-900/20 border border-white/10 rounded-[2.5rem] p-8 flex flex-col items-center justify-between overflow-hidden backdrop-blur-sm group hover:border-white/20 opacity-0 translate-y-24 transition-all duration-1000 delay-300 ease-out"
+              className="relative bg-zinc-900/20 border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 flex flex-col items-center justify-between overflow-hidden backdrop-blur-sm group hover:border-white/20 opacity-0 translate-y-24 transition-all duration-1000 delay-300 ease-out"
             >
                {/* Glossy top highlight */}
                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
                
                <div className="flex-1 flex items-center justify-center w-full">
-                  <div className="relative w-56 h-56 flex items-center justify-center">
+                  <div className="relative w-44 h-44 sm:w-56 sm:h-56 flex items-center justify-center">
                     {/* Glowing Background */}
                     <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full" />
                     
@@ -115,9 +115,9 @@ const About: React.FC = () => {
                     </svg>
 
                     <div className="text-center z-10 space-y-1">
-                       <div className="text-6xl font-bold text-white tracking-tighter drop-shadow-2xl">98%</div>
-                       <div className="text-sm font-medium text-zinc-400">Efficiency</div>
-                       <div className="text-sm font-medium text-zinc-400">Increase</div>
+                       <div className="text-4xl sm:text-6xl font-bold text-white tracking-tighter drop-shadow-2xl">98%</div>
+                       <div className="text-xs sm:text-sm font-medium text-zinc-400">Efficiency</div>
+                       <div className="text-xs sm:text-sm font-medium text-zinc-400">Increase</div>
                     </div>
                   </div>
                </div>
@@ -131,13 +131,13 @@ const About: React.FC = () => {
                {/* Top Card: Human-First AI */}
                <div 
                  ref={topCardRef}
-                 className="flex-1 bg-zinc-900/20 border border-white/10 rounded-[2.5rem] p-8 flex flex-col items-center text-center justify-center backdrop-blur-sm hover:bg-zinc-900/30 opacity-0 translate-x-12 transition-all duration-1000 delay-500 ease-out"
+                 className="flex-1 bg-zinc-900/20 border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 flex flex-col items-center text-center justify-center backdrop-blur-sm hover:bg-zinc-900/30 opacity-0 translate-x-12 transition-all duration-1000 delay-500 ease-out"
                >
-                  <div className="mb-6 p-4 rounded-2xl bg-white/5 border border-white/5 relative">
-                     <Network className="w-8 h-8 text-zinc-200" strokeWidth={1.5} />
+                  <div className="mb-5 sm:mb-6 p-4 rounded-2xl bg-white/5 border border-white/5 relative">
+                     <Network className="w-7 h-7 sm:w-8 sm:h-8 text-zinc-200" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Human-First AI</h3>
-                  <p className="text-zinc-500 text-xs leading-relaxed max-w-[200px] font-medium">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">Human-First AI</h3>
+                  <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed max-w-[200px] font-medium">
                     Empowering people with intelligent tools, not replacing them.
                   </p>
                </div>
@@ -145,22 +145,22 @@ const About: React.FC = () => {
                {/* Bottom Card: Tech Stack */}
                <div 
                  ref={bottomCardRef}
-                 className="flex-1 bg-zinc-900/20 border border-white/10 rounded-[2.5rem] p-8 flex flex-col justify-center backdrop-blur-sm hover:bg-zinc-900/30 opacity-0 translate-x-12 transition-all duration-1000 delay-700 ease-out"
+                 className="flex-1 bg-zinc-900/20 border border-white/10 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 flex flex-col justify-center backdrop-blur-sm hover:bg-zinc-900/30 opacity-0 translate-x-12 transition-all duration-1000 delay-700 ease-out"
                >
                   <div className="space-y-5 pl-2">
                      <div className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
-                        <Workflow className="w-5 h-5 text-white" strokeWidth={1.5} />
-                        <span className="text-base font-semibold text-zinc-300 tracking-tight">n8n</span>
+                        <Workflow className="w-4 h-4 sm:w-5 sm:h-5 text-white" strokeWidth={1.5} />
+                        <span className="text-sm sm:text-base font-semibold text-zinc-300 tracking-tight">n8n</span>
                      </div>
                      <div className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
-                        <Cloud className="w-5 h-5 text-white" strokeWidth={1.5} />
-                        <span className="text-base font-semibold text-zinc-300 tracking-tight">Google Cloud</span>
+                        <Cloud className="w-4 h-4 sm:w-5 sm:h-5 text-white" strokeWidth={1.5} />
+                        <span className="text-sm sm:text-base font-semibold text-zinc-300 tracking-tight">Google Cloud</span>
                      </div>
                      <div className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
-                        <div className="w-5 h-5 flex items-center justify-center bg-white rounded-full">
-                           <span className="text-[10px] font-black text-black">m</span>
+                        <div className="w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center bg-white rounded-full">
+                           <span className="text-[8px] sm:text-[10px] font-black text-black">m</span>
                         </div>
-                        <span className="text-base font-semibold text-zinc-300 tracking-tight">make.com</span>
+                        <span className="text-sm sm:text-base font-semibold text-zinc-300 tracking-tight">make.com</span>
                      </div>
                   </div>
                   <div className="text-zinc-600 text-[10px] font-bold uppercase tracking-[0.2em] mt-8 pl-2">Tech Stack Mastery</div>

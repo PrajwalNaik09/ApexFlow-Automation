@@ -40,7 +40,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative w-full bg-black py-32 px-6 overflow-hidden border-t border-white/5">
+    <section className="relative w-full bg-black py-20 sm:py-24 md:py-32 px-5 sm:px-6 overflow-hidden border-t border-white/5">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/5 to-transparent pointer-events-none" />
       
@@ -49,14 +49,14 @@ export default function FAQ() {
 
       <div className="relative max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-gray-800/60 bg-gray-900/30 backdrop-blur-sm">
             <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">FAQ</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
             Questions you might have
           </h2>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+          <p className="text-gray-500 text-base sm:text-lg max-w-xl mx-auto">
             Everything you need to know about our AI automation services
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className={`group relative bg-gradient-to-br from-neutral-800/30 to-neutral-900/20 border backdrop-blur-xl rounded-2xl overflow-hidden transition-all duration-500 ease-out ${
+              className={`group relative bg-gradient-to-br from-neutral-800/30 to-neutral-900/20 border backdrop-blur-xl rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-500 ease-out ${
                 openIndex === index 
                   ? 'border-neutral-600/60 shadow-2xl shadow-black/50' 
                   : 'border-neutral-700/30 hover:border-neutral-600/50'
@@ -76,11 +76,11 @@ export default function FAQ() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               
               <button
-                className="relative w-full px-7 py-6 flex items-start justify-between text-left transition-all duration-300 focus:outline-none"
+                className="relative w-full px-5 sm:px-7 py-5 sm:py-6 flex items-start justify-between text-left transition-all duration-300 focus:outline-none"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
               >
-                <span className={`text-lg font-semibold pr-6 transition-colors duration-300 ${
+                <span className={`text-base sm:text-lg font-semibold pr-6 transition-colors duration-300 ${
                   openIndex === index ? 'text-white' : 'text-gray-300 group-hover:text-white'
                 }`}>
                   {faq.q}
@@ -107,9 +107,9 @@ export default function FAQ() {
                   opacity: openIndex === index ? 1 : 0
                 }}
               >
-                <div className="px-7 pb-6 pt-0">
+                <div className="px-5 sm:px-7 pb-6 pt-0">
                   <div className="w-full h-px bg-gradient-to-r from-transparent via-neutral-600/40 to-transparent mb-5" />
-                  <p className="text-gray-400 text-base leading-relaxed">
+                  <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                     {faq.a}
                   </p>
                 </div>

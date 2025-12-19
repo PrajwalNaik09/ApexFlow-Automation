@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex flex-col justify-end bg-black overflow-hidden pb-12 md:pb-24">
+    <section id="home" className="relative min-h-screen w-full flex flex-col justify-end bg-black overflow-hidden pb-10 sm:pb-12 md:pb-24">
       {/* 
         3D BACKGROUND LAYER
         Optimized for visibility and performance. 
@@ -55,20 +55,20 @@ const Hero: React.FC = () => {
         ></spline-viewer>
       </div>
 
-      <div className="relative z-20 w-full max-w-[1600px] mx-auto px-8 md:px-16 pointer-events-none">
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-end gap-12 lg:gap-8 pointer-events-auto">
-          <div className="lg:col-span-7 space-y-12 animate-fade-up">
+      <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 sm:px-8 md:px-16 pointer-events-none">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-end gap-10 sm:gap-12 lg:gap-8 pointer-events-auto">
+          <div className="lg:col-span-7 space-y-8 sm:space-y-12 animate-fade-up">
             <h1 className="hero-title font-bold text-white tracking-tighter mix-blend-screen drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
               The Operating System<br />for AI-First Companies
             </h1>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-[10px] font-black tracking-[0.4em] text-zinc-400 uppercase">
+            <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-3 sm:gap-y-4 text-[9px] sm:text-[10px] font-black tracking-[0.25em] sm:tracking-[0.4em] text-zinc-400 uppercase">
               <a href="#services" className="text-white hover:text-zinc-300 transition-colors">SERVICES</a> \ 
               <a href="#portfolio" className="hover:text-white transition-colors">PORTFOLIO</a> \ 
               <a href="#contact" className="hover:text-white transition-colors">CONTACT US</a>
             </div>
           </div>
 
-          <div className="lg:col-span-5 flex flex-col items-start lg:items-end space-y-12 animate-fade-up [animation-delay:200ms]">
+          <div className="lg:col-span-5 flex flex-col items-start lg:items-end space-y-8 sm:space-y-12 animate-fade-up [animation-delay:200ms]">
             <p className="text-zinc-300 text-sm md:text-base max-w-[400px] leading-relaxed lg:text-right font-medium drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
               We engineer autonomous systems that replace manual workflows, letting your team focus on high-leverage strategy while we handle the execution.
             </p>
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 href="https://calendly.com/prajwalofficial14/new-meeting"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-12 py-4 border border-white/10 bg-black/40 backdrop-blur-md rounded-full text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all active:scale-95 duration-300"
+                className="px-8 sm:px-12 py-3 sm:py-4 border border-white/10 bg-black/40 backdrop-blur-md rounded-full text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all active:scale-95 duration-300"
               >
                 Book a Demo Call
               </a>

@@ -3,10 +3,10 @@ import { Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-black pt-24 pb-12 px-6 md:px-12 overflow-hidden border-t border-white/5">
+    <footer className="relative bg-black pt-16 sm:pt-20 md:pt-24 pb-10 sm:pb-12 px-5 sm:px-6 md:px-12 overflow-hidden border-t border-white/5">
       
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 mb-16 sm:mb-20 md:mb-24">
           
           {/* Brand Column */}
           <div className="md:col-span-4 space-y-6">
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-white rotate-45 flex items-center justify-center rounded-lg">
                   <span className="-rotate-45 font-black text-black text-xl">A</span>
               </div>
-              <span className="text-3xl font-bold tracking-tighter text-white font-[Inter]">ApexFlow</span>
+              <span className="text-2xl sm:text-3xl font-bold tracking-tighter text-white font-[Inter]">ApexFlow</span>
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed max-w-sm">
               Your all-in-one automation agency — build, deploy, and scale AI agents across all workflows from one powerful framework.
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Links Column - Replaced About & Support with this */}
-          <div className="md:col-span-4 space-y-8">
+          <div className="md:col-span-4 space-y-6 sm:space-y-8">
             <h4 className="font-bold text-white text-base">Explore</h4>
             <ul className="space-y-4 text-zinc-500 text-sm font-medium">
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
@@ -33,15 +33,15 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter Column */}
-          <div className="md:col-span-4 space-y-8">
+          <div className="md:col-span-4 space-y-6 sm:space-y-8">
             <h4 className="font-bold text-white text-base">Get Updates</h4>
-            <div className="flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full p-1.5 pl-5 focus-within:border-zinc-700 transition-colors">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-2 bg-zinc-900 border border-zinc-800 rounded-2xl sm:rounded-full p-3 sm:p-1.5 sm:pl-5 focus-within:border-zinc-700 transition-colors">
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="bg-transparent border-none outline-none text-sm w-full text-zinc-300 placeholder:text-zinc-600 font-medium"
+                className="bg-transparent border-none outline-none text-sm w-full text-zinc-300 placeholder:text-zinc-600 font-medium px-1"
               />
-              <button className="px-6 py-3 bg-white text-black text-sm font-bold rounded-full hover:bg-zinc-200 transition-colors">
+              <button className="px-5 py-3 bg-white text-black text-sm font-bold rounded-full hover:bg-zinc-200 transition-colors">
                 Subscribe
               </button>
             </div>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 relative z-20">
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 relative z-20">
           <p className="text-zinc-500 text-xs font-medium">
             © 2025 ApexFlow. All rights reserved.
           </p>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
 
       {/* Big Background Text */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[20%] pointer-events-none select-none z-0 w-full overflow-hidden flex justify-center">
-        <h1 className="text-[23vw] font-bold leading-none tracking-tighter text-zinc-950 whitespace-nowrap">
+        <h1 className="text-[26vw] sm:text-[23vw] font-bold leading-none tracking-tighter text-zinc-950 whitespace-nowrap">
           ApexFlow
         </h1>
       </div>

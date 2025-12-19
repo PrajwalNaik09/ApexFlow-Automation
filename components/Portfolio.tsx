@@ -44,14 +44,14 @@ const Portfolio: React.FC = () => {
   }, []);
 
   return (
-    <section id="portfolio" className="py-24 px-6 md:px-12 bg-zinc-950">
+    <section id="portfolio" className="py-20 sm:py-24 px-5 sm:px-6 md:px-12 bg-zinc-950">
       <div className="max-w-7xl mx-auto">
-        <div ref={headerRef} className="mb-16 opacity-0 translate-y-12 transition-all duration-700 ease-out">
+        <div ref={headerRef} className="mb-12 sm:mb-16 opacity-0 translate-y-12 transition-all duration-700 ease-out">
           <h2 className="text-zinc-500 text-sm font-bold uppercase tracking-[0.2em] mb-4">Proven Results</h2>
-          <p className="text-4xl md:text-5xl font-bold">Systems that generate real ROI.</p>
+          <p className="text-3xl sm:text-4xl md:text-5xl font-bold">Systems that generate real ROI.</p>
         </div>
 
-        <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
           {PROJECTS.map((project, idx) => (
             <div 
               key={idx} 
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
               style={{ transitionDelay: `${idx * 200}ms` }}
             >
               {/* Image Container */}
-              <div className="relative aspect-[16/10] overflow-hidden rounded-3xl mb-8 border border-white/5 group-hover:border-white/20 transition-colors duration-500">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl sm:rounded-3xl mb-6 sm:mb-8 border border-white/5 group-hover:border-white/20 transition-colors duration-500">
                 <img 
                   src={project.image} 
                   alt={project.title} 
@@ -71,17 +71,17 @@ const Portfolio: React.FC = () => {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700"></div>
                 
                 {/* Category Badge */}
-                <div className="absolute top-6 left-6">
-                  <span className="px-4 py-2 rounded-full glass bg-black/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-[0.2em] text-white/90 border border-white/10 group-hover:bg-white group-hover:text-black transition-all duration-500">
+                <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
+                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass bg-black/20 backdrop-blur-md text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] text-white/90 border border-white/10 group-hover:bg-white group-hover:text-black transition-all duration-500">
                     {project.category}
                   </span>
                 </div>
               </div>
 
               {/* Text Content */}
-              <div className="flex justify-between items-start gap-6 px-2">
+              <div className="flex justify-between items-start gap-4 sm:gap-6 px-1 sm:px-2">
                 <div className="space-y-3">
-                  <h3 className="text-2xl md:text-3xl font-bold text-zinc-100 group-hover:text-white transition-colors duration-300">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-zinc-100 group-hover:text-white transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="text-zinc-500 text-sm leading-relaxed max-w-sm group-hover:text-zinc-400 transition-colors duration-300">
@@ -90,7 +90,7 @@ const Portfolio: React.FC = () => {
                 </div>
 
                 {/* Interactive Arrow Button */}
-                <div className="relative flex-shrink-0 w-14 h-14 rounded-full border border-white/10 flex items-center justify-center overflow-hidden group-hover:border-white/30 transition-all duration-500">
+                <div className="relative flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-white/10 flex items-center justify-center overflow-hidden group-hover:border-white/30 transition-all duration-500">
                    {/* Background fill animation */}
                    <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]"></div>
                    

@@ -32,13 +32,14 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenConsultant }) => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] py-8 md:py-12 pointer-events-none">
-      <div className="max-w-[1600px] mx-auto px-8 md:px-16 flex justify-between items-center pointer-events-auto">
+    <nav className="fixed top-0 left-0 right-0 z-[100] py-6 sm:py-8 md:py-12 pointer-events-none">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 md:px-16 flex justify-between items-center pointer-events-auto">
         {/* Left: Logo and Navigation Links */}
-        <div className="flex items-center gap-8 lg:gap-14">
-          <a href="#home" className="text-lg font-bold tracking-wider text-white uppercase mr-4 lg:mr-8">
+        <div className="flex items-center gap-6 lg:gap-14">
+          <a href="#home" className="text-base sm:text-lg font-bold tracking-wider text-white uppercase mr-2 sm:mr-4 lg:mr-8">
             Apex Flow
           </a>
+          <div className="hidden md:flex items-center gap-8 lg:gap-14">
           <a 
             href="#home" 
             className={`text-[11px] font-bold tracking-[0.2em] uppercase transition-colors ${
@@ -71,10 +72,19 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenConsultant }) => {
           >
             Contact Us
           </a>
+          </div>
         </div>
         
         {/* Right: Utility and CTA */}
         <div className="flex items-center gap-6">
+          <a 
+            href="https://calendly.com/prajwalofficial14/new-meeting"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="sm:hidden px-4 py-2 bg-transparent border border-white/10 rounded-full text-[10px] font-bold tracking-[0.18em] uppercase hover:bg-white hover:text-black transition-all"
+          >
+            Talk
+          </a>
           <a 
             href="https://calendly.com/prajwalofficial14/new-meeting"
             target="_blank" 

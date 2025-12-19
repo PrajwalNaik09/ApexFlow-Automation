@@ -6,49 +6,8 @@
     <title>Apex Flow | AI Automation Agency</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Updated Spline Viewer Script -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.23/build/spline-viewer.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        :root { --bg: #000; --accent: #0095ff; }
-        
-        html {
-            scroll-behavior: smooth; /* Enable native smooth scrolling for anchor links */
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: #fff;
-            margin: 0;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-        
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
-            background-size: 40px 40px;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        /* Optimization classes */
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-title { font-size: clamp(3rem, 8vw, 6.5rem); line-height: 0.9; letter-spacing: -0.04em; }
-        
-        @keyframes fade-up { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fade-up { animation: fade-up 0.8s cubic-bezier(0.2, 1, 0.3, 1) forwards; }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #555; }
-    </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@18.3.1",
@@ -63,7 +22,56 @@
     "vite": "https://esm.sh/vite@^7.3.0"
   }
 }
-</script>
+    </script>
+    <!-- Updated Spline Viewer Script -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.23/build/spline-viewer.js"></script>
+    <style>
+        :root { --bg: #000; --accent: #0095ff; }
+        
+        html {
+            scroll-behavior: smooth; /* Enable native smooth scrolling for anchor links */
+            scroll-padding-top: 96px; /* Offset for fixed navigation */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: #fff;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            overscroll-behavior-y: none;
+            -webkit-overflow-scrolling: touch;
+            text-rendering: optimizeLegibility;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Optimization classes */
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-title { font-size: clamp(2.5rem, 9vw, 6.5rem); line-height: 0.95; letter-spacing: -0.04em; }
+        
+        @keyframes fade-up { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-up { animation: fade-up 0.8s cubic-bezier(0.2, 1, 0.3, 1) forwards; }
+
+        @media (max-width: 640px) {
+            html { scroll-padding-top: 72px; }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
 </head>
 <body class="bg-black text-white">
     <div id="root"></div>
